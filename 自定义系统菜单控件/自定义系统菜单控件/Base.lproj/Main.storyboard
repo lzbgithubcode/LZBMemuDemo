@@ -26,7 +26,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wbb-7R-Qmg">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wbb-7R-Qmg" customClass="LZBCopyImageView">
                                         <rect key="frame" x="-6" y="106" width="381" height="144"/>
                                     </imageView>
                                 </subviews>
@@ -76,7 +76,7 @@
                                     <constraint firstAttribute="trailing" secondItem="sgJ-T4-Z4m" secondAttribute="trailing" constant="8" id="i5p-ZS-Uhf"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="BcU-ku-cXG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="BcU-ku-cXG" customClass="LZBCopyImageView">
                                 <rect key="frame" x="0.0" y="450" width="375" height="168"/>
                             </imageView>
                         </subviews>
@@ -122,12 +122,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-sX-H3o">
-                                <rect key="frame" x="67" y="348" width="282" height="237"/>
-                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="粘贴板" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewz-Hr-ITL">
                                 <rect key="frame" x="140" y="28" width="107" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -139,18 +133,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGd-0X-wZC" customClass="LZBCopyImageView">
+                                <rect key="frame" x="56" y="362" width="272" height="231"/>
+                                <color key="backgroundColor" red="0.37647058820000001" green="0.21960784310000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="粘贴板的ImageView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v5-g7-6FN">
+                                <rect key="frame" x="114" y="311" width="170" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gb0-Ch-3Nu" firstAttribute="top" secondItem="lVO-ia-659" secondAttribute="bottom" constant="22" id="BCn-cf-uXf"/>
-                            <constraint firstItem="LSh-sX-H3o" firstAttribute="leading" secondItem="lbx-V0-Kg8" secondAttribute="leading" constant="67" id="EXV-3x-Za7"/>
                             <constraint firstItem="lVO-ia-659" firstAttribute="top" secondItem="xYL-9g-hEN" secondAttribute="bottom" constant="62" id="HIf-5V-lai"/>
                             <constraint firstItem="gb0-Ch-3Nu" firstAttribute="leading" secondItem="lbx-V0-Kg8" secondAttribute="leading" constant="75" id="PcF-uw-V45"/>
                             <constraint firstItem="lVO-ia-659" firstAttribute="trailing" secondItem="gb0-Ch-3Nu" secondAttribute="trailing" id="Vql-Nr-g2w"/>
                             <constraint firstItem="lVO-ia-659" firstAttribute="leading" secondItem="gb0-Ch-3Nu" secondAttribute="leading" id="rfV-FV-O6p"/>
-                            <constraint firstItem="Ron-oz-SdC" firstAttribute="top" secondItem="LSh-sX-H3o" secondAttribute="bottom" constant="33" id="t7h-QM-Zeu"/>
-                            <constraint firstAttribute="trailing" secondItem="LSh-sX-H3o" secondAttribute="trailing" constant="26" id="tV3-YR-UWT"/>
-                            <constraint firstItem="LSh-sX-H3o" firstAttribute="top" secondItem="gb0-Ch-3Nu" secondAttribute="bottom" constant="69" id="xFb-GI-dfx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="粘贴板" id="3PI-wU-X2C"/>

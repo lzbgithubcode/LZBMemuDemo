@@ -1,32 +1,26 @@
 //
-//  LZBCopyLabel.m
+//  LZBCopyImageView.m
 //  自定义系统菜单控件
 //
 //  Created by apple on 16/5/21.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import "LZBCopyLabel.h"
+#import "LZBCopyImageView.h"
 
-@interface LZBCopyLabel ()
+@interface LZBCopyImageView ()
 
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGesture;
 
 @end
 
-@implementation LZBCopyLabel
-
-+ (LZBCopyLabel *)copyLabel
-{
-    LZBCopyLabel *label = [[LZBCopyLabel alloc]init];
-    return label;
-}
+@implementation LZBCopyImageView
 - (instancetype)initWithFrame:(CGRect)frame
 {
-  if(self = [super initWithFrame: frame])
-  {
-      [self setupUI];
-  }
+    if(self = [super initWithFrame: frame])
+    {
+        [self setupUI];
+    }
     return self;
 }
 
@@ -46,12 +40,12 @@
 
 - (void)setIsCopyEnable:(BOOL)isCopyEnable
 {
-  if(_isCopyEnable != isCopyEnable)
-  {
-      _isCopyEnable = isCopyEnable;
-      self.longPressGesture.enabled = isCopyEnable;
-      self.userInteractionEnabled =isCopyEnable;
-  }
+    if(_isCopyEnable != isCopyEnable)
+    {
+        _isCopyEnable = isCopyEnable;
+        self.longPressGesture.enabled = isCopyEnable;
+        self.userInteractionEnabled =isCopyEnable;
+    }
 }
 
 
@@ -59,10 +53,10 @@
 #pragma mark - 长按手势 业务逻辑处理
 -(void)longPressGestureClick:(UILongPressGestureRecognizer *)longPress
 {
-   if(longPress.state == UIGestureRecognizerStateBegan)
-   {
-       [self showMenu];
-   }
+    if(longPress.state == UIGestureRecognizerStateBegan)
+    {
+        [self showMenu];
+    }
 }
 
 - (void)showMenu
@@ -115,26 +109,28 @@
 - (void)copyAction:(id)sender
 {
     UIPasteboard *pasteBoard = [UIPasteboard generalPasteboard];
-    pasteBoard.string = self.text;
+    pasteBoard.image = self.image;
 }
 
 -(void)pasteAction:(id)sender
 {
-    self.textAlignment = NSTextAlignmentCenter;
-    self.text = [UIPasteboard generalPasteboard].string;
+    self.contentMode = UIViewContentModeScaleToFill;
+    self.clipsToBounds =YES;
+    self.image = [UIPasteboard generalPasteboard].image;
 }
 
 
 #pragma mark - 初始化控件
 - (UILongPressGestureRecognizer *)longPressGesture
 {
-  if(_longPressGesture == nil)
-  {
-      _longPressGesture = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressGestureClick:)];
-  }
+    if(_longPressGesture == nil)
+    {
+        _longPressGesture = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressGestureClick:)];
+    }
     return _longPressGesture;
     
 }
+
 
 
 @end

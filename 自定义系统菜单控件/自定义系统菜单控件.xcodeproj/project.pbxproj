@@ -19,6 +19,7 @@
 		180208661CF0412100E506FB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 180208651CF0412100E506FB /* 1.png */; };
 		180208681CF0421E00E506FB /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 180208671CF0421E00E506FB /* 2.png */; };
 		1802086B1CF043E500E506FB /* LZBCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802086A1CF043E500E506FB /* LZBCopyLabel.m */; };
+		1802086E1CF04D1500E506FB /* LZBCopyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802086D1CF04D1500E506FB /* LZBCopyImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		180208671CF0421E00E506FB /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		180208691CF043E500E506FB /* LZBCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBCopyLabel.h; sourceTree = "<group>"; };
 		1802086A1CF043E500E506FB /* LZBCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBCopyLabel.m; sourceTree = "<group>"; };
+		1802086C1CF04D1500E506FB /* LZBCopyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBCopyImageView.h; sourceTree = "<group>"; };
+		1802086D1CF04D1500E506FB /* LZBCopyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBCopyImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 			children = (
 				180208691CF043E500E506FB /* LZBCopyLabel.h */,
 				1802086A1CF043E500E506FB /* LZBCopyLabel.m */,
+				1802086C1CF04D1500E506FB /* LZBCopyImageView.h */,
+				1802086D1CF04D1500E506FB /* LZBCopyImageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				180208441CF03C9000E506FB /* AppDelegate.m in Sources */,
 				1802086B1CF043E500E506FB /* LZBCopyLabel.m in Sources */,
 				180208411CF03C9000E506FB /* main.m in Sources */,
+				1802086E1CF04D1500E506FB /* LZBCopyImageView.m in Sources */,
 				180208601CF03DDD00E506FB /* LZBPasteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
