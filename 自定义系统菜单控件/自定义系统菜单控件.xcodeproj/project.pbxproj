@@ -13,6 +13,12 @@
 		1802084A1CF03C9000E506FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180208481CF03C9000E506FB /* Main.storyboard */; };
 		1802084C1CF03C9000E506FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1802084B1CF03C9000E506FB /* Assets.xcassets */; };
 		1802084F1CF03C9000E506FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1802084D1CF03C9000E506FB /* LaunchScreen.storyboard */; };
+		1802085D1CF03DCD00E506FB /* LZBCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802085C1CF03DCD00E506FB /* LZBCopyViewController.m */; };
+		180208601CF03DDD00E506FB /* LZBPasteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802085F1CF03DDD00E506FB /* LZBPasteViewController.m */; };
+		180208631CF03E9000E506FB /* LZBCopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180208621CF03E9000E506FB /* LZBCopyModel.m */; };
+		180208661CF0412100E506FB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 180208651CF0412100E506FB /* 1.png */; };
+		180208681CF0421E00E506FB /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 180208671CF0421E00E506FB /* 2.png */; };
+		1802086B1CF043E500E506FB /* LZBCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802086A1CF043E500E506FB /* LZBCopyLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,16 @@
 		1802084B1CF03C9000E506FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1802084E1CF03C9000E506FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180208501CF03C9000E506FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1802085B1CF03DCD00E506FB /* LZBCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBCopyViewController.h; sourceTree = "<group>"; };
+		1802085C1CF03DCD00E506FB /* LZBCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBCopyViewController.m; sourceTree = "<group>"; };
+		1802085E1CF03DDD00E506FB /* LZBPasteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBPasteViewController.h; sourceTree = "<group>"; };
+		1802085F1CF03DDD00E506FB /* LZBPasteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBPasteViewController.m; sourceTree = "<group>"; };
+		180208611CF03E9000E506FB /* LZBCopyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBCopyModel.h; sourceTree = "<group>"; };
+		180208621CF03E9000E506FB /* LZBCopyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBCopyModel.m; sourceTree = "<group>"; };
+		180208651CF0412100E506FB /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		180208671CF0421E00E506FB /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		180208691CF043E500E506FB /* LZBCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBCopyLabel.h; sourceTree = "<group>"; };
+		1802086A1CF043E500E506FB /* LZBCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBCopyLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		180208561CF03CDF00E506FB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				180208641CF040B100E506FB /* Resource */,
 				180208571CF03CDF00E506FB /* Controller */,
 				180208581CF03CDF00E506FB /* Model */,
 				180208591CF03CDF00E506FB /* View */,
@@ -92,6 +109,10 @@
 		180208571CF03CDF00E506FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1802085B1CF03DCD00E506FB /* LZBCopyViewController.h */,
+				1802085C1CF03DCD00E506FB /* LZBCopyViewController.m */,
+				1802085E1CF03DDD00E506FB /* LZBPasteViewController.h */,
+				1802085F1CF03DDD00E506FB /* LZBPasteViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +120,8 @@
 		180208581CF03CDF00E506FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				180208611CF03E9000E506FB /* LZBCopyModel.h */,
+				180208621CF03E9000E506FB /* LZBCopyModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +129,8 @@
 		180208591CF03CDF00E506FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				180208691CF043E500E506FB /* LZBCopyLabel.h */,
+				1802086A1CF043E500E506FB /* LZBCopyLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +142,15 @@
 				180208431CF03C9000E506FB /* AppDelegate.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		180208641CF040B100E506FB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				180208671CF0421E00E506FB /* 2.png */,
+				180208651CF0412100E506FB /* 1.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1802084F1CF03C9000E506FB /* LaunchScreen.storyboard in Resources */,
+				180208661CF0412100E506FB /* 1.png in Resources */,
+				180208681CF0421E00E506FB /* 2.png in Resources */,
 				1802084C1CF03C9000E506FB /* Assets.xcassets in Resources */,
 				1802084A1CF03C9000E506FB /* Main.storyboard in Resources */,
 			);
@@ -189,9 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1802085D1CF03DCD00E506FB /* LZBCopyViewController.m in Sources */,
+				180208631CF03E9000E506FB /* LZBCopyModel.m in Sources */,
 				180208471CF03C9000E506FB /* ViewController.m in Sources */,
 				180208441CF03C9000E506FB /* AppDelegate.m in Sources */,
+				1802086B1CF043E500E506FB /* LZBCopyLabel.m in Sources */,
 				180208411CF03C9000E506FB /* main.m in Sources */,
+				180208601CF03DDD00E506FB /* LZBPasteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
